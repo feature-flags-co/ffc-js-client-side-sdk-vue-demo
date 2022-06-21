@@ -28,7 +28,14 @@ export const option = {
     devModePassword: 'thisisademo' // 激活开发者模式的密码，非必须
 }
 ```
-4. 运行结果:
+
+4. 运行程序
+```
+npm install
+npm run dev
+```
+
+5. 运行结果:
     1. Hello World
        ![Hello World](./assets/helloworld.jpg)
     2. Hello Universe
