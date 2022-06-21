@@ -31,7 +31,14 @@ export const option = {
 
 
 ```
-4. Results:
+
+4. Run
+```
+npm install
+npm run dev
+```
+
+5. Results:
     1. Hello World
        ![Hello World](./assets/helloworld.jpg)
     2. Hello Universe
