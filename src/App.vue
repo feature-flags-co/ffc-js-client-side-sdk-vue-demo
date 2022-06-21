@@ -3,7 +3,7 @@ import Counter from './components/Counter.vue'
 </script>
 
 <script>
-import {store} from "./ffc";
+import { store } from "./ffc";
 
 export default {
   data() {

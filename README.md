@@ -1,4 +1,4 @@
-# 敏捷开关 Vue3 [ffc-js-client-side-sdk demo](https://github.com/feature-flags-co/ffc-js-client-side-sdk)
+# 敏捷开关 Vue [ffc-js-client-side-sdk demo](https://github.com/feature-flags-co/ffc-js-client-side-sdk)
 [English README](README-EN.md)
 
 ## 设置

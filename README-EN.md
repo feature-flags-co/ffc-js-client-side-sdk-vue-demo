@@ -1,4 +1,4 @@
-# The [ffc-js-client-side-sdk demo](https://github.com/feature-flags-co/ffc-js-client-side-sdk) for react with jotai
+# The [ffc-js-client-side-sdk demo](https://github.com/feature-flags-co/ffc-js-client-side-sdk) for Vue
 [中文 README](README.md)
 
 ## Get started
