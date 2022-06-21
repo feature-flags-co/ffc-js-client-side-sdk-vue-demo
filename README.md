@@ -1,29 +1,37 @@
-# ffc-js-client-side-sdk-vue-demo
+# 敏捷开关 Vue3 [ffc-js-client-side-sdk demo](https://github.com/feature-flags-co/ffc-js-client-side-sdk)
+[English README](README-EN.md)
 
-This template should help get you started developing with Vue 3 in Vite.
+## 设置
+1. 前往 [https://portal.featureflag.co](https://portal.featureflag.co) 创建项目和环境
+2. 在环境中创建两个开关
+    1. **hello** : 两个返回值，分别为 **World** 和 **Universe**
+       ![hello flag config](./assets/helloflag.jpg)
+    2. **counter** : 两个返回值，非别为 **true** 和 **false**
+       ![counter flag config](./assets/counterflag.jpg)
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+3. 打开 src/ffc/config.js 文件并且将 secret 替换为您自己环境的 secret
+```javascript
+export const option = {
+    secret: "USE_YOUR_ENVIRONMENT_SECRET", // 替换为自己环境的 secret
+    anonymous: false,
+    user: { // 运行 demo 时可以不用改
+        id: 'my-user',
+        userName: 'my user',
+        email: '',
+        customizedProperties: [
+            {
+                "name": "sex",
+                "value": "male"
+            }]
+    },
+    devModePassword: 'thisisademo' // 激活开发者模式的密码，非必须
+}
 ```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+4. 运行结果:
+    1. Hello World
+       ![Hello World](./assets/helloworld.jpg)
+    2. Hello Universe
+       ![Hello Universe](./assets/hellouniverse.jpg)
+    3. 激活 counter 模块
+       ![Activate counter module](./assets/withcountermodule.jpg)
