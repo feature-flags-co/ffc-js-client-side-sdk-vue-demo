@@ -3,22 +3,14 @@ import Counter from './components/Counter.vue'
 </script>
 
 <script>
-import { store } from "./ffc";
-
-export default {
-  data() {
-    return {
-      store
-    }
-  }
-}
+import { ffcStore } from "./ffc";
 </script>
 
 <template>
   <div className="App">
     <header className="App-header">
-      <div>Hello {{store.flags["hello"]}} </div>
-      <Counter v-if="store.flags['counter'] === 'true'"/>
+      <div>Hello {{ffcStore.flags["hello"]}} </div>
+      <Counter v-if="ffcStore.flags['counter'] === 'true'"/>
     </header>
   </div>
 </template>

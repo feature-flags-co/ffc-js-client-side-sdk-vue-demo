@@ -1,13 +1,13 @@
 {
   "name": "ffc-js-client-side-sdk-vue-demo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
-    "ffc-js-client-side-sdk": "^1.0.34",
+    "ffc-js-client-side-sdk": "^1.0.35",
     "vue": "^3.2.36"
   },
   "devDependencies": {

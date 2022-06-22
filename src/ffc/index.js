@@ -18,7 +18,7 @@ const _option = Object.assign(
 
 ffcClient.init(_option);
 
-export const store = reactive({
+export const ffcStore = reactive({
     flags: createFlagsProxy(),
     setFlags(flagsProxy) {
         this.flags = flagsProxy
@@ -27,13 +27,13 @@ export const store = reactive({
 
 ffcClient.on("ff_update", (changes) => {
     if (changes.length) {
-        store.setFlags(createFlagsProxy());
+        ffcStore.setFlags(createFlagsProxy());
     }
 });
 
 ffcClient.waitUntilReady().then((data) => {
     if (data.length) {
-        store.setFlags(createFlagsProxy());
+        ffcStore.setFlags(createFlagsProxy());
     }
 });
 
