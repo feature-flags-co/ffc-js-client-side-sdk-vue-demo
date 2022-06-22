@@ -11,7 +11,9 @@ npm install ffc-js-client-side-sdk --save
 export const option = {
     secret: "USE_YOUR_ENVIRONMENT_SECRET", // 替换为自己环境的 secret
     anonymous: false,
-    user: { // 运行 demo 时可以不用改
+    // 请使用您自己的 user 信息，如果 暂时没有 user 信息可忽略此参数并将 anonymous 设为 true, 
+    // 之后可以调用 ffcClient.identify(user) 方法传入 user
+    user: {
         id: 'my-user',
         userName: 'my user',
         email: '',
