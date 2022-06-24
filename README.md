@@ -32,6 +32,7 @@ export const option = {
 ffcClient.identify(user);
 ```
 4. 使用开关
+
 ```js
 <script>
 import { ffcStore } from "./ffc";
