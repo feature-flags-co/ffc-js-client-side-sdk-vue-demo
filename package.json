@@ -7,7 +7,7 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
-    "ffc-js-client-side-sdk": "^1.1.3",
+    "ffc-js-client-side-sdk": "^1.1.4",
     "vue": "^3.2.36"
   },
   "devDependencies": {
